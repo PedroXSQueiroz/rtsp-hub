@@ -59,6 +59,8 @@ var streamServer = http.createServer( function(request, response) {
 		response.end();
 	}
 
+	console.log(request.method);
+
 	response.connection.setTimeout(0);
 	console.log(
 		'Stream Connected: ' + 
